@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway2:wght@300;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.home-header {
+    background-image: url("../public/Images/Home/Black-Wallpapers.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    background-attachment: scroll;
+}
+
+.navbar {
+    padding: 20px 140px;
+}
+
+.bg-custom {
+    background-color: transparent;
+}
+
+.sec-h-brand {
+    color: #3a86ff;
+}
+
+
+.moving-mouse-holder {
+    margin: auto;
+    margin-top: 60px;
+    width: 170px;
+}
+
+.moving-mouse-holder .mouse {
+    width: 26px;
+    height: 40px;
+    position: relative;
+    right: 0;
+    border-radius: 18px;
+    border: 2px solid #fff;
+}
+
+.moving-mouse-holder .mouse-button {
+    background-color: #fff;
+    width: 4px;
+    height: 10px;
+    border-radius: 2px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin: 0 0 0 -2px;
+    animation: mouse-scroll 1s infinite alternate;
+}
+
+.moving-mouse-holder .text {
+    margin-top: -30px;
+    margin-left: 40px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1em;
+}
+
+@keyframes mouse-scroll {
+    to {
+        transform: translate(0, 6px) scale(1, 0.8);
+    }
+}
+
+.main {
+    text-align: center;
+    height: 500px;
+}
+
+.main div {
+    margin-top: 200px;
+}
+
+
+.main h1 {
+    color: #fff;
+    font-family: 'Raleway2', sans-serif;
+}
+
+.main p {
+    color: #fff;
+}
+
+.main button {
+    background-color: transparent;
+    border: #3a86ff 3px solid;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 36px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+    transition: all .5s ease;
+}
+
+.main button {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.main button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 8px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.main button:hover {
+    padding-right: 24px;
+    padding-left: 8px;
+    background-color: white;
+    border: #fff;
+    border-radius: 2px;
+    transform: scale(.98);
+    color: #3a86ff;
+}
+
+.main button:hover:after {
+    opacity: 1;
+    right: 28px;
+}
+
+/*//////////////////////////////////////////////////////////////////**/
+
+
+
+.about-us {
+    background: url("../public/Images/Home/About-us.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: auto;
+    width: 100%;
+}
+
+.about-us-con {
+    height: auto;
+    padding: 150px;
+}
+
+.centered-about {
+    height: 400px;
+    width: 800px;
+    background-color: white;
+    border: #fff 10px solid;
+    margin: auto;
+    box-shadow: 0px 0px 18px 2px gray;
+    border-radius: 20px;
+}
+
+.centered-about img {
+    position: absolute;
+    height: 400px;
+    width: auto;
+    left: 200px;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 10px 0px 20px 4px gray;
+}
+
+.text-inside {
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.text-inside h3 {
+    font-size: 34px;
+}
+
+.text-inside li {
+    font-size: 18px;
+}
+
+
+
+
+
+.depp-fix {
+    background-color: black;
+    height: 80vh;
+}
+
+
+.depp-fix h2 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.depp-fix h5 {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.depp-fix-insdie {
+    background-color: #fff;
+    border-radius: 20px;
+    height: 300px;
+    box-shadow: 32px 44px 91px -37px rgba(255, 255, 255, 0.53);
+}
+
+.ul-depp-fix {
+    margin-left: 40px;
+    margin-top: 80px;
+}
+
+.ul-depp-fix h3 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.ul-depp-fix li {
+    font-size: 20px;
+}
+
+.depp-fix-insdie img {
+    object-fit: cover;
+    height: 320px;
+    width: 320px;
+    position: absolute;
+    border-radius: 20px;
+    right: 100px;
+    margin-top: 50px;
+}
+
+
+
+
+.contact-us {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)), url("../public/Images/Home/contact-us.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: auto;
+    width: 100%;
+}
+
+
+.form-contact {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 32px 44px 91px -37px rgba(0, 0, 0, 0.53);
+    width: 800px;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.form-contact input {
+    width: 700px;
+    display: block;
+    border: none;
+    outline: none;
+    margin: 40px;
+    padding: 10px;
+    border-bottom: #3a86ff 3px solid;
+    transition: all .2s ease;
+}
+
+.form-contact input:focus {
+    border: #3a86ff 1px solid;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.form-contact textarea {
+    margin: 40px;
+    border: #3a86ff 3px solid;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.submit-contact {
+    margin: 40px;
+    width: 700px;
+    height: 40px;
+    background-color: #3a86ff;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    outline: none;
+    transition: 1s all ease;
+}
+
+.submit-contact:hover {
+    background-color: transparent;
+    border: #3a86ff 3px solid;
+    color: black;
+    transform: scale(.95);
+}
+
+.form-contact h2 {
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer {
+    height: auto;
+    background-color: black;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+footer ul {
+    width: 100%;
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+    margin: 0px 10px;
+}
+
+footer li a {
+    color: white;
+}
+
+footer img {
+    margin-right: 10px;
+    width: 100px;
+}
+
